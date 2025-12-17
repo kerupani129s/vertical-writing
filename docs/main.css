@@ -1,0 +1,19 @@
+body {
+	font-family: sans-serif;
+	background-color: #eee;
+}
+
+table {
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+
+th, td {
+	width: 120px;
+	border: solid 1px;
+}
+
+.example {
+	padding: 0;
+	background-color: #fff;
+}

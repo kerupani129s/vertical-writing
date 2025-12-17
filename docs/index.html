@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML および SVG の縦書き</title>
+    <link rel="stylesheet" href="main.css?v=52c7203358a562e4ce32">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c">
+    <meta property="og:title" content="HTML および SVG の縦書き">
+    <meta property="og:description" content="HTML および SVG の縦書き">
+    <meta property="og:url" content="https://kerupani129s.github.io/vertical-writing/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+  </head>
+  <body>
+    <h1>縦書き</h1>
+    <h2><code>writing-mode</code></h2>
+    <table>
+      <thead>
+        <tr>
+          <th>HTML</th>
+          <th>SVG<br><code>writing-mode</code> プロパティ</th>
+          <th>SVG<br><code>writing-mode</code> 属性</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="example">
+            <div style="width: 120px; height: 120px; font: 16px serif; line-height: 20px; writing-mode: vertical-rl;">
+              読点、句点。<br>
+              「鍵括弧」<br>
+              長音記号ー<br>
+              波ダッシュ〜<br>
+              やゃゆゅよょ<br>
+              ABCD
+            </div>
+          </td>
+          <td class="example">
+            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+              <text font-size="16" font-family="serif" style="writing-mode: vertical-rl;">
+                <tspan x="110" y="0">読点、句点。</tspan>
+                <tspan x="90"  y="0">「鍵括弧」</tspan>
+                <tspan x="70"  y="0">長音記号ー</tspan>
+                <tspan x="50"  y="0">波ダッシュ〜</tspan>
+                <tspan x="30"  y="0">やゃゆゅよょ</tspan>
+                <tspan x="10"  y="0">ABCD</tspan>
+              </text>
+            </svg>
+          </td>
+          <td class="example">
+            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+              <text font-size="16" font-family="serif" writing-mode="vertical-rl">
+                <tspan x="110" y="0">読点、句点。</tspan>
+                <tspan x="90"  y="0">「鍵括弧」</tspan>
+                <tspan x="70"  y="0">長音記号ー</tspan>
+                <tspan x="50"  y="0">波ダッシュ〜</tspan>
+                <tspan x="30"  y="0">やゃゆゅよょ</tspan>
+                <tspan x="10"  y="0">ABCD</tspan>
+              </text>
+            </svg>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h2><code>text-orientation</code></h2>
+    <table>
+      <thead>
+        <tr>
+          <th>HTML</th>
+          <th>SVG<br><code>writing-mode</code> プロパティ</th>
+          <th>SVG<br><code>writing-mode</code> 属性</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="example">
+            <div style="width: 120px; height: 120px; font: 16px serif; line-height: 20px; writing-mode: vertical-rl; text-orientation: upright;">
+              読点、句点。<br>
+              「鍵括弧」<br>
+              長音記号ー<br>
+              やゃゆゅよょ<br>
+              波ダッシュ〜<br>
+              ABCD
+            </div>
+          </td>
+          <td class="example">
+            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+              <text font-size="16" font-family="serif" style="writing-mode: vertical-rl; text-orientation: upright;">
+                <tspan x="110" y="0">読点、句点。</tspan>
+                <tspan x="90"  y="0">「鍵括弧」</tspan>
+                <tspan x="70"  y="0">長音記号ー</tspan>
+                <tspan x="50"  y="0">波ダッシュ〜</tspan>
+                <tspan x="30"  y="0">やゃゆゅよょ</tspan>
+                <tspan x="10"  y="0">ABCD</tspan>
+              </text>
+            </svg>
+          </td>
+          <td class="example">
+            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+              <text font-size="16" font-family="serif" writing-mode="vertical-rl" style="text-orientation: upright;">
+                <tspan x="110" y="0">読点、句点。</tspan>
+                <tspan x="90"  y="0">「鍵括弧」</tspan>
+                <tspan x="70"  y="0">長音記号ー</tspan>
+                <tspan x="50"  y="0">波ダッシュ〜</tspan>
+                <tspan x="30"  y="0">やゃゆゅよょ</tspan>
+                <tspan x="10"  y="0">ABCD</tspan>
+              </text>
+            </svg>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h2><code>glyph-orientation-vertical</code></h2>
+    <h3><code>glyph-orientation-vertical</code> プロパティ</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>SVG<br><code>writing-mode</code> プロパティ</th>
+          <th>SVG<br><code>writing-mode</code> 属性</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="example">
+            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+              <text font-size="16" font-family="serif" style="writing-mode: vertical-rl; glyph-orientation-vertical: 0;">
+                <tspan x="110" y="0">読点、句点。</tspan>
+                <tspan x="90"  y="0">「鍵括弧」</tspan>
+                <tspan x="70"  y="0">長音記号ー</tspan>
+                <tspan x="50"  y="0">波ダッシュ〜</tspan>
+                <tspan x="30"  y="0">やゃゆゅよょ</tspan>
+                <tspan x="10"  y="0">ABCD</tspan>
+              </text>
+            </svg>
+          </td>
+          <td class="example">
+            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+              <text font-size="16" font-family="serif" writing-mode="vertical-rl" style="writing-mode: vertical-rl; glyph-orientation-vertical: 0;">
+                <tspan x="110" y="0">読点、句点。</tspan>
+                <tspan x="90"  y="0">「鍵括弧」</tspan>
+                <tspan x="70"  y="0">長音記号ー</tspan>
+                <tspan x="50"  y="0">波ダッシュ〜</tspan>
+                <tspan x="30"  y="0">やゃゆゅよょ</tspan>
+                <tspan x="10"  y="0">ABCD</tspan>
+              </text>
+            </svg>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h3><code>glyph-orientation-vertical</code> 属性</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>SVG<br><code>writing-mode</code> プロパティ</th>
+          <th>SVG<br><code>writing-mode</code> 属性</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="example">
+            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+              <text font-size="16" font-family="serif" glyph-orientation-vertical="0" style="writing-mode: vertical-rl;">
+                <tspan x="110" y="0">読点、句点。</tspan>
+                <tspan x="90"  y="0">「鍵括弧」</tspan>
+                <tspan x="70"  y="0">長音記号ー</tspan>
+                <tspan x="50"  y="0">波ダッシュ〜</tspan>
+                <tspan x="30"  y="0">やゃゆゅよょ</tspan>
+                <tspan x="10"  y="0">ABCD</tspan>
+              </text>
+            </svg>
+          </td>
+          <td class="example">
+            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+              <text font-size="16" font-family="serif" writing-mode="vertical-rl" glyph-orientation-vertical="0">
+                <tspan x="110" y="0">読点、句点。</tspan>
+                <tspan x="90"  y="0">「鍵括弧」</tspan>
+                <tspan x="70"  y="0">長音記号ー</tspan>
+                <tspan x="50"  y="0">波ダッシュ〜</tspan>
+                <tspan x="30"  y="0">やゃゆゅよょ</tspan>
+                <tspan x="10"  y="0">ABCD</tspan>
+              </text>
+            </svg>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h2><code>font-feature-settings</code></h2>
+    <h3><code>vert</code>, <code>vrtr</code></h3>
+    <table>
+      <thead>
+        <tr>
+          <th>HTML</th>
+          <th>SVG<br><code>writing-mode</code> プロパティ</th>
+          <th>SVG<br><code>writing-mode</code> 属性</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="example">
+            <div style="width: 120px; height: 120px; font: 16px serif; line-height: 20px; writing-mode: vertical-rl; font-feature-settings: 'vert', 'vrtr';">
+              読点、句点。<br>
+              「鍵括弧」<br>
+              長音記号ー<br>
+              やゃゆゅよょ<br>
+              波ダッシュ〜<br>
+              ABCD
+            </div>
+          </td>
+          <td class="example">
+            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+              <text font-size="16" font-family="serif" style="writing-mode: vertical-rl; font-feature-settings: 'vert', 'vrtr';">
+                <tspan x="110" y="0">読点、句点。</tspan>
+                <tspan x="90"  y="0">「鍵括弧」</tspan>
+                <tspan x="70"  y="0">長音記号ー</tspan>
+                <tspan x="50"  y="0">波ダッシュ〜</tspan>
+                <tspan x="30"  y="0">やゃゆゅよょ</tspan>
+                <tspan x="10"  y="0">ABCD</tspan>
+              </text>
+            </svg>
+          </td>
+          <td class="example">
+            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+              <text font-size="16" font-family="serif" writing-mode="vertical-rl" style="font-feature-settings: 'vert', 'vrtr';">
+                <tspan x="110" y="0">読点、句点。</tspan>
+                <tspan x="90"  y="0">「鍵括弧」</tspan>
+                <tspan x="70"  y="0">長音記号ー</tspan>
+                <tspan x="50"  y="0">波ダッシュ〜</tspan>
+                <tspan x="30"  y="0">やゃゆゅよょ</tspan>
+                <tspan x="10"  y="0">ABCD</tspan>
+              </text>
+            </svg>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h3><code>vrt2</code></h3>
+    <table>
+      <thead>
+        <tr>
+          <th>HTML</th>
+          <th>SVG<br><code>writing-mode</code> プロパティ</th>
+          <th>SVG<br><code>writing-mode</code> 属性</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="example">
+            <div style="width: 120px; height: 120px; font: 16px serif; line-height: 20px; writing-mode: vertical-rl; font-feature-settings: 'vrt2';">
+              読点、句点。<br>
+              「鍵括弧」<br>
+              長音記号ー<br>
+              やゃゆゅよょ<br>
+              波ダッシュ〜<br>
+              ABCD
+            </div>
+          </td>
+          <td class="example">
+            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+              <text font-size="16" font-family="serif" style="writing-mode: vertical-rl; font-feature-settings: 'vrt2';">
+                <tspan x="110" y="0">読点、句点。</tspan>
+                <tspan x="90"  y="0">「鍵括弧」</tspan>
+                <tspan x="70"  y="0">長音記号ー</tspan>
+                <tspan x="50"  y="0">波ダッシュ〜</tspan>
+                <tspan x="30"  y="0">やゃゆゅよょ</tspan>
+                <tspan x="10"  y="0">ABCD</tspan>
+              </text>
+            </svg>
+          </td>
+          <td class="example">
+            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+              <text font-size="16" font-family="serif" writing-mode="vertical-rl" style="font-feature-settings: 'vrt2';">
+                <tspan x="110" y="0">読点、句点。</tspan>
+                <tspan x="90"  y="0">「鍵括弧」</tspan>
+                <tspan x="70"  y="0">長音記号ー</tspan>
+                <tspan x="50"  y="0">波ダッシュ〜</tspan>
+                <tspan x="30"  y="0">やゃゆゅよょ</tspan>
+                <tspan x="10"  y="0">ABCD</tspan>
+              </text>
+            </svg>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h2><code>font-family</code></h2>
+    <p><code>font-feature-settings: 'vert', 'vrtr';</code></p>
+    <h3>M PLUS Rounded 1c</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>HTML</th>
+          <th>SVG<br><code>writing-mode</code> プロパティ</th>
+          <th>SVG<br><code>writing-mode</code> 属性</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="example">
+            <div style="width: 120px; height: 120px; font: 16px 'M PLUS Rounded 1c'; line-height: 20px; writing-mode: vertical-rl; font-feature-settings: 'vert', 'vrtr';">
+              読点、句点。<br>
+              「鍵括弧」<br>
+              長音記号ー<br>
+              波ダッシュ〜<br>
+              やゃゆゅよょ<br>
+              ABCD
+            </div>
+          </td>
+          <td class="example">
+            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+              <text font-size="16" font-family="M PLUS Rounded 1c" style="writing-mode: vertical-rl; font-feature-settings: 'vert', 'vrtr';">
+                <tspan x="110" y="0">読点、句点。</tspan>
+                <tspan x="90"  y="0">「鍵括弧」</tspan>
+                <tspan x="70"  y="0">長音記号ー</tspan>
+                <tspan x="50"  y="0">波ダッシュ〜</tspan>
+                <tspan x="30"  y="0">やゃゆゅよょ</tspan>
+                <tspan x="10"  y="0">ABCD</tspan>
+              </text>
+            </svg>
+          </td>
+          <td class="example">
+            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+              <text font-size="16" font-family="M PLUS Rounded 1c" writing-mode="vertical-rl" style="font-feature-settings: 'vert', 'vrtr';">
+                <tspan x="110" y="0">読点、句点。</tspan>
+                <tspan x="90"  y="0">「鍵括弧」</tspan>
+                <tspan x="70"  y="0">長音記号ー</tspan>
+                <tspan x="50"  y="0">波ダッシュ〜</tspan>
+                <tspan x="30"  y="0">やゃゆゅよょ</tspan>
+                <tspan x="10"  y="0">ABCD</tspan>
+              </text>
+            </svg>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p lang="en"><a href="https://github.com/kerupani129s/vertical-writing">View on GitHub</a></p>
+  </body>
+</html>
